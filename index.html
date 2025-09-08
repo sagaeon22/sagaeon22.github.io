@@ -1,21 +1,71 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My Portfolio - Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meinaldo · Portfolio</title>
+  <meta name="description" content="Meinaldo — portfolio of projects in animation, motion graphics, and tech.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Arial; text-align:center; margin:50px;">
-  <h1>Hello, I’m Meinaldo</h1>
-  <p>Welcome to my personal portfolio website!</p>
-  <h2>About Me</h2>
-  <p>I’m passionate about technology, DevOps, and Windows tips.</p>
-  <h2>Projects</h2>
-  <ul style="list-style:none;">
-    <li>🚀 Project 1 – <a href="#">View</a></li>
-    <li>⚡ Project 2 – <a href="#">View</a></li>
-    <li>💻 Project 3 – <a href="#">View</a></li>
-  </ul>
-  <h2>Contact</h2>
-  <p>Email: yourname@email.com</p>
+<body>
+  <header class="wrap">
+    <h1>Hello, I’m <span class="accent">Meinaldo</span></h1>
+    <p class="lead">Welcome to my personal portfolio website.</p>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m passionate about technology, motion graphics, and game‑ready art. I build tools, tutorials, and visuals that help people learn and connect.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="cards">
+        <li class="card">
+          <h3>🚀 Project 1</h3>
+          <p>Quick one‑liner about what this does and why it’s cool.</p>
+          <p><a class="btn" href="#" aria-label="View Project 1">View</a></p>
+        </li>
+        <li class="card">
+          <h3>⚡ Project 2</h3>
+          <p>Another concise description to showcase your role and impact.</p>
+          <p><a class="btn" href="#" aria-label="View Project 2">View</a></p>
+        </li>
+        <li class="card">
+          <h3>🖥️ Project 3</h3>
+          <p>Short summary with tech stack or techniques used.</p>
+          <p><a class="btn" href="#" aria-label="View Project 3">View</a></p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+      <p>
+        <a href="#" aria-label="Behance">Behance</a> ·
+        <a href="#" aria-label="ArtStation">ArtStation</a> ·
+        <a href="#" aria-label="LinkedIn">LinkedIn</a> ·
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="wrap small">
+    <p>© <span id="year"></span> Meinaldo · Built with GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
