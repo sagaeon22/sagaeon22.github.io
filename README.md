@@ -1,37 +1,19 @@
-# GitHub Pages Starter
+# SAGAEON — Cyberpunk Portfolio
 
-This repo contains a minimal, responsive **portfolio** ready for GitHub Pages.
+A neon/cyberpunk GitHub Pages starter for your portfolio.
 
-## 1) Create the repo
-- Name it `USERNAME.github.io` (replace with your username).
-- Make it **Public**.
-- Upload these files (`index.html`, `style.css`) to the root and commit.
+## Quick Start
+1. Create a new repo named `<username>.github.io` (or any repo).
+2. Upload these files to the repo root.
+3. In **Settings → Pages**, choose **Deploy from branch** and set the default branch + `/` root.
+4. (Optional) Add your custom domain (e.g., `sagaeon.com`) and enable **Enforce HTTPS**.
 
-## 2) Turn on Pages
-- Open **Settings → Pages**.
-- **Source:** Branch = `main`, Folder = `/root` (or `/docs` if you prefer keeping site files there).
+## Customize
+- Edit `/assets/css/style.css` colors in `:root`.
+- Replace images in `/assets/img/` (`thumb1.jpg`, `thumb2.jpg`, `thumb3.jpg`).
+- Update links in the header/footer (`Behance`, `LinkedIn`, email).
+- Edit text in `index.html`, `projects.html`, and `about.html`.
 
-> If you don’t see “Pages”: ensure the repo is **public**, you’ve made at least **one commit**, and you’re in **repo settings** (not account settings).
-
-## 3) Set a custom domain (optional)
-- In **Settings → Pages → Custom domain**, enter your domain (e.g., `sagaeon.com`) and save.
-- Then add DNS at your registrar (Namecheap example):
-
-**A records (apex)** for `@` →
-```
-185.199.108.153
-185.199.109.153
-185.199.110.153
-185.199.111.153
-```
-
-**CNAME** for `www` → `USERNAME.github.io`
-
-- Wait for DNS to resolve, then toggle **Enforce HTTPS** in Pages.
-
-## 4) Edit content
-- Replace text in `index.html` with your bio and links.
-- Duplicate a `.card` block for more projects.
-- Colors live in `style.css` `:root` variables.
-
-Enjoy! 🎉
+## Notes
+- Fonts: Audiowide (titles) + Inter (body).
+- Effects: neon glow, glitch hover, CRT scanlines, subtle radial neon gradients.
