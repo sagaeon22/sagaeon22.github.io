@@ -18,7 +18,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 // ---------- SFX CLICK ----------
-const SFX_PATH = "assets/sfx/click.mp3";
+const SFX_PATH = "assets/191576214-vhs-glitch-transition-01.wav";
 let sfxEnabled = localStorage.getItem("sfxMuted") !== "true"; // default ON
 let clickAudio;
 
