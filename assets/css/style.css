@@ -81,4 +81,17 @@ nav .nav-link:hover::after{animation:glitch 900ms steps(2,end) infinite; opacity
 @media (prefers-reduced-motion: reduce){
   .scanlines, nav .nav-link::after, .neon-title{animation:none}
 }
+/* SFX toggle button styling */
+.sfx-toggle{
+  margin-left: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--grid);
+  background: var(--panel);
+  color: var(--ink);
+  cursor: pointer;
+}
+.sfx-toggle:hover{
+  box-shadow: 0 0 12px rgba(0,240,255,.25) inset, 0 0 16px rgba(255,0,255,.12) inset;
+}
 
